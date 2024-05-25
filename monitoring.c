@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   monitoring.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: itahri <itahri@student.42.fr>              +#+  +:+       +#+        */
+/*   By: itahri <itahri@contact.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/25 15:22:25 by itahri            #+#    #+#             */
-/*   Updated: 2024/05/25 17:56:58 by itahri           ###   ########.fr       */
+/*   Updated: 2024/05/25 22:21:18 by itahri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	monitoring(va_list args, char *c)
 {
-	c++;	
+	c++;
 	if (*c == 'c')
 		return (car_fr(args));
 	else if (*c == 's')
@@ -33,4 +33,3 @@ int	monitoring(va_list args, char *c)
 		return (write(1, "%", 1), 1);
 	return (0);
 }
-

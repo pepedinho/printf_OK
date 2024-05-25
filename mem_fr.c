@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   mem_fr.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: itahri <itahri@student.42.fr>              +#+  +:+       +#+        */
+/*   By: itahri <itahri@contact.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/25 16:11:38 by itahri            #+#    #+#             */
-/*   Updated: 2024/05/25 18:26:27 by itahri           ###   ########.fr       */
+/*   Updated: 2024/05/25 22:27:57 by itahri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "ft_printf.h"
-
-
 
 static void	ft_putnbr_base_ptr(unsigned long long int nbr, char *base)
 {
@@ -19,19 +18,14 @@ static void	ft_putnbr_base_ptr(unsigned long long int nbr, char *base)
 	unsigned long long	base_len;
 
 	base_len = ft_strlen(base);
-	if (nbr < 0)
-	{
-		write(1, "-", 1);
-		nbr = -nbr;
-	}
 	if (nbr >= base_len)
 		ft_putnbr_base(nbr / base_len, base);
 	char_nbr = base[nbr % base_len];
 	write(1, &char_nbr, 1);
 }
 
-static void print_mem(unsigned long long int nbr)
-{ 
+static void	print_mem(unsigned long long int nbr)
+{
 	write(1, "0x", 2);
 	ft_putnbr_base_ptr(nbr, "0123456789abcdef");
 }

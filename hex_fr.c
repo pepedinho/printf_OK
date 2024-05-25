@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   hex_fr.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: itahri <itahri@student.42.fr>              +#+  +:+       +#+        */
+/*   By: itahri <itahri@contact.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/25 16:30:22 by itahri            #+#    #+#             */
-/*   Updated: 2024/05/25 18:44:32 by itahri           ###   ########.fr       */
+/*   Updated: 2024/05/25 22:26:44 by itahri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	hex_fr(va_list args, int cas)
 {
-	unsigned int arg;
+	unsigned int	arg;
 
 	arg = va_arg(args, unsigned int);
 	if (cas == 1)

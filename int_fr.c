@@ -12,9 +12,9 @@
 
 #include "ft_printf.h"
 
-int int_fr(va_list args)
+int	int_fr(va_list args)
 {
-	int arg;
+	int	arg;
 
 	arg = va_arg(args, int);
 	ft_putnbr_base(arg, "0123456789");

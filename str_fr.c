@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   str_fr.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: itahri <itahri@student.42.fr>              +#+  +:+       +#+        */
+/*   By: itahri <itahri@contact.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/25 15:44:32 by itahri            #+#    #+#             */
-/*   Updated: 2024/05/25 16:48:49 by itahri           ###   ########.fr       */
+/*   Updated: 2024/05/25 22:20:42 by itahri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static int ft_putstr(char *str)
+static int	ft_putstr(char *str)
 {
 	int	i;
 
@@ -25,9 +25,9 @@ static int ft_putstr(char *str)
 	return (i);
 }
 
-int str_fr(va_list args)
+int	str_fr(va_list args)
 {
-	char  *str;
+	char	*str;
 
 	str = va_arg(args, char *);
 	if (!str)
