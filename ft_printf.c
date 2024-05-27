@@ -18,6 +18,8 @@ int	ft_printf(const char *format, ...)
 	int		i;
 	int		count;
 
+	if (!format)
+		return (-1);
 	i = 0;
 	count = 0;
 	va_start(args, format);
@@ -43,8 +45,8 @@ int	ft_printf(const char *format, ...)
 int main(void)
 {
 	printf("ft : \n");
-	printf("%d\n", ft_printf("|salut %x|\n", LONG_MAX ));
+	printf("%d\n", ft_printf(NULL));
 	printf("original : \n");
-	printf("%d\n", printf("|salut %x|\n", (unsigned int)LONG_MAX));
+	printf("%d\n", printf(NULL));
 }
 */
